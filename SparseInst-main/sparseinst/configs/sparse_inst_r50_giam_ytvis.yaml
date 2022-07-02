@@ -1,0 +1,2 @@
+_BASE_: "Base-SparseInst-ytvis.yaml"
+OUTPUT_DIR: "output/sparse_inst_r50_giam_ytvis"

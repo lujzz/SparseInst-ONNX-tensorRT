@@ -1,0 +1,12 @@
+_BASE_: "Base-SparseInst.yaml"
+MODEL:
+  WEIGHTS: "/home/renhongzhang/SparseInst/pretrained_models/mobilenet_v2_model.pth"
+  BACKBONE:
+    NAME: "build_mbv2_backbone"
+  SPARSE_INST:
+    ENCODER:
+      IN_FEATURES: ["mb3", "mb4", "mb5"]
+  MBNET:
+    NORM: "FrozenBN"
+    OUT_FEATURES: ["mb3", "mb4", "mb5"]
+OUTPUT_DIR: "output/sparse_inst_mbnetv2"
